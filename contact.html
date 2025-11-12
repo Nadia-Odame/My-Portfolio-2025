@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadiya Portfolio 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact">
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="My Logo">
+      </div>
+      <h2>Odame Nadia<br>Akua Nsiah</h2>
+      <hr>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="mission.html">Mission & Vision</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="pitch.html">Elevator Pitch</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+    <section id="contact-hero">
+    <h1>Let’s Connect</h1>
+    <p>Have a project idea, feedback, or collaboration in mind? <em>I’d love to hear from you.</em></p>
+     </section>
+
+  <section class="contact-container">
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="successMessage" style="display: none; color: green; text-align: center; font-weight: bold;">
+  ✅ Thank you! Your message has been sent.
+</p>
+    </form>
+
+    <div class="contact-info">
+      <h2>Contact Info</h2>
+      <p>Email: <strong>diyaaaa444@gmail.com</strong></p>
+      <div class="social-links">
+        <a href="#"><img src="images/linkedIn.png" alt="LinkedIn"></a>
+        <a href="#"><img src="images/github.png" alt="GitHub"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer>
+    <p>© 2025 Diya Impact Hub | Designed with 💙 by Nadiya</p>
+  </footer>
+  <script>
+  const form = document.getElementById('contactForm');
+  const message = document.getElementById('successMessage');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Stop the form from reloading the page
+    message.style.display = 'block'; // Show success message
+    form.reset(); // Clear the input fields
+
+    // Optional: hide the message after 4 seconds
+    setTimeout(() => {
+      message.style.display = 'none';
+    }, 4000);
+  });
+</script>
+
+</body>
+</html>
