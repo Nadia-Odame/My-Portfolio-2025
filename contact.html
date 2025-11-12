@@ -31,16 +31,21 @@
      </section>
 
   <section class="contact-container">
-    <form class="contact-form">
+    <form class="contact-form" action="#thanks" method="get">
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
       <input type="text" placeholder="Subject" required>
       <textarea placeholder="Message" rows="6" required></textarea>
       <button type="submit">Send Message</button>
-      <p id="successMessage" style="display: none; color: green; text-align: center; font-weight: bold;">
-  ✅ Thank you! Your message has been sent.
-</p>
+      </div>
     </form>
+      <div id="thanks">
+        <div class="message-box">
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for reaching out. I'll get back to you soon!</p>
+          <a href="#" class="close-btn">Close</a>
+        </div>
+        </div>
 
     <div class="contact-info">
       <h2>Contact Info</h2>
@@ -56,21 +61,5 @@
   <footer>
     <p>© 2025 Diya Impact Hub | Designed with 💙 by Nadiya</p>
   </footer>
-  <script>
-  const form = document.getElementById('contactForm');
-  const message = document.getElementById('successMessage');
-
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Stop the form from reloading the page
-    message.style.display = 'block'; // Show success message
-    form.reset(); // Clear the input fields
-
-    // Optional: hide the message after 4 seconds
-    setTimeout(() => {
-      message.style.display = 'none';
-    }, 4000);
-  });
-</script>
-
 </body>
 </html>
