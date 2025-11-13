@@ -34,7 +34,6 @@ This website communicates my mission, vision, and projects aligned with global c
 - **HTML5** – for structure and semantic markup  
 - **CSS3** – for layout, styling, and responsive design  
 - **Git & GitHub** – for version control and hosting  
-- *(Optional)* JavaScript – for form interactions or animations
 
 ---
 
